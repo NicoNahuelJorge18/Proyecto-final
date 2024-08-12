@@ -1,0 +1,387 @@
+/* Estilos generales de mi página, los iniciales como por ejemplo mi font-family y el color principal de mi página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/black\ ground.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+
+
+/* Encabezado de mi página web, color de mi página, su padding, top, position, etc (investigando, descubrí que la propiedad z-index funciona para seleccionar que elemento superpongo encima del otro, en este caso, mi header se superpone)*/
+header {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    padding: 0 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    flex-wrap: wrap;
+    background-image: url(../img/image\ de\ fondo\ para\ header.avif);
+    
+}
+
+
+/* nav(todo lo relacionado a los links de mi página web) */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+   flex-wrap: wrap;
+}
+
+/* los elementos de mi ul (parte de links) parte de navbar 1 */
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* partes de texto de mis links, con esto le doy color a mi barra superior, como tambien un size, un family, un display, padding, etc (parte de navbar 2) */
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 15px 20px; 
+    position: sticky;
+    top: 0%;
+}
+
+/* parte fundamental de mi grafico de link, con esta propiedad le doy color cuando selecciono la opción (mis links) parte de navbar 3*/
+nav a:hover {
+    background-color: rgb(25, 0, 255); 
+    border-radius: 5px; 
+}
+
+/* imagen de mi index(mi imagen principal) */
+.imagen1index {
+    height: 420px;
+    width: 1320px;
+    flex-wrap: wrap;
+}
+
+/* Estilo personalizado para mi título de bienvenida, titulo inicial de index en resumen */
+.titulodebienvenida {
+    display: inline-block;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+
+}
+
+/* parrafo principal después del titulo, esto entra en main ya que considero parte de lo principal de mi página */
+.parrafodeindex {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.35em;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border-style: dotted;
+    border-width: 5px;
+    border-radius: 60px;
+    border-color: rgb(255, 0, 0);
+    display: inline-block;
+}
+
+/* esta clase la llamé parrafosos, pero en realidad es un h2 jaja, este h2 class lo reutilizo para los siguientes parrafos en mi index, lo utilizo para darle color a mi h2, como también color de border, como se puede ver, mi border tiene propiedades en separado ya que me parecía más sencillo, además de tener 2 colores, tener un font family, un style, un display inline-block para que mi texto tenga esta misma propiedad,etc*/
+
+.parrafosos {
+    display: inline-block;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(165, 34, 34) rgb(255, 255, 255);
+    border-radius: 60px;
+}
+
+/* esta clase también es un h2, pero con cierto grado de transparencia, o color grisaseo, también lo reutilizo en mi index */
+
+.h2demisindex {
+    font-size: 24px;
+    color: rgb(165, 34, 34);
+}
+
+/* aca se puede observar a los iframe , con su width, height, un border, su style, su color y así */
+
+.videosindex {
+    width: 700px;
+    height: 300px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: rgb(255, 255, 255);
+}
+
+/* Contenido principal de la página, acá descubrí que no puede entrar ni el footer, ni el encabezado, entre otras cosas que no se consideran principales para la página */
+main {
+    padding: 80px 20px; 
+}
+
+/* Tales secciones específicas, estos section más que nada, los uso cuando no se exactamente en donde poner alguno de mis elementos, como por ejemplo, en cada html externo tengo aplicado un p y un h1 dentro de un main antes de mi footer y después de mi header, entonces apliqué un h1 y un p, dentro de section, dentro de un main */
+section {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de mis encabezados, solamente le puse encabezado a mis h2 */
+
+h2 {
+    color: #333;
+}
+
+/* Estilos de los párrafos, algo general */
+p {
+    color: #666;
+}
+
+/* Estilos de los enlaces, algo general  */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* aca vuelvo a utilizar la propiedad hover para aplicar un código que quizá no lo vimos pero lo aprendí, el término underline significa linea debajo, que sería como un subrallado en mi hover, de este modo, cada vez que  seleccione en mi barra superior, no solo mi hover va a hacer que se cambie de color, sino que mi "a hover"  hace que también tenga una linea debajo cuando lo seleccione */
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* acá va mi form o formulario */
+.inputfindex {
+    color: white;
+}
+
+/* titulo de mi formulario */
+.formulariotittle {
+    color: white;
+    font-size: 30px;
+    font-family: monospace;
+    display: inline-block;
+    border-style: inset;
+    border-width: 3px;
+    border-color: blue;
+}
+
+/* mi formulario */
+.formulario {
+    color: white; 
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+}
+
+/* configuración de fieldset f1 */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-right: solid;
+    border-color: rgba(47, 0, 255, 0.568);
+    border-radius: 10px;
+    
+}
+/* configuración de mi label */
+label {
+    color: rgb(255, 255, 255);
+    background-color: rgb(194, 4, 4);
+    border-style: solid;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 5px;
+    display: inline-block;
+}
+
+/* mi configuracion input de label e input f2 */
+label input {
+width: 40%;
+font-size: medium;
+padding: 10px;
+}
+
+/* mi configuración de label f3 */
+input {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10pxpx;
+}
+
+
+
+/* Footer de Index, acá ya empieza mi parte "footer" */
+footer {
+    background-color: #ffffff;
+    background-image: url(../img/image\ de\ fondo\ para\ header.avif);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+}
+/* parrafo de footer */
+footer p {
+    margin: 0;
+}
+
+/* estilo de div de address y de aside */
+.principal {
+   display: flex;
+   flex-wrap: nowrap; 
+}
+
+
+aside {
+    flex-basis: 25%;
+    height: 900px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Estilos generales para pantallas de celular, acá estaba tratando de poner mis media querie por separado pero me pareció más fácil y organizado ajustar todos mis elementos mediante un @media querie, y configure de tal manera que a partir de mis 800px se aplicaran los siguientes cambios */
+@media (max-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px;
+        height: 40px;
+        position: unset;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        height: 5px;
+        font-size: 9px;
+    }
+
+    nav a {
+        padding: 12px 20px;
+        flex-direction: row;
+    }
+
+    .imagen1index {
+        width: 100%;
+        height: auto;
+    }
+
+    .titulodebienvenida {
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .parrafodeindex {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .parrafosos {
+        font-size: 20px;
+        padding: 10px;
+        border-width: 3px;
+    }
+
+    .h2demisindex {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .videosindex {
+        width: 100%;
+        height: auto;
+        border-width: 5px;
+    }
+
+    main {
+        padding: 60px 10px;
+    }
+
+    section {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+    iframe {
+        width: 600px;
+        height: 400px;
+    }
+    .videosmobile {
+        width: 450px;
+        height: 300px;
+    }
+        /* seccion keppler */
+    .imagenkeppler {
+        width: 390px;
+        height: 250px;
+    }
+}
+
+.teoríasfisicascomprobadash1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+/* planetas keppler mundo 1 */
+.sectionfond {
+    background-image: url(../img/image\ de\ fondo\ para\ header.avif);
+}
+
+.planetaskepplerh2 {
+    color: black;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* acá le pongo color al link de la página planetas Keppler porque se me había puesto en verde automáticamente jajaja  */
+.hrefcolor {
+    color: blue;
+}
+
+/* pequeña imagen dentro del archivo "proximamente" */
+.universoproximamente {
+        height: 100px;
+        width: 100px;
+}
+.proximamentea {
+    font-size: 40px;
+    font-family: serif;
+    border-width: 5px;
+    border-style: double;
+    border-radius: 5px;
+    border-color: red blue green rgb(208, 231, 0);
+    display: inline-block;
+}
+.gatoproximamente {
+    height: 300px;
+        width: 300px;
+}
